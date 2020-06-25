@@ -13,7 +13,6 @@ jobs:
         with:
           host: "165.22.106.81"
           username: "root"
-          key: "UZ65PrfzhHXfhaHZ"
+          password: "UZ65PrfzhHXfhaHZ"
           port: 22
-          script: |
-            ls -al
+          script: whoami
