@@ -1,0 +1,19 @@
+name: deploy
+on: 
+  push:
+    branches: 
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy package to digitalocean
+        uses: appleboy/ssh-action@master
+        with:
+          host: "165.22.106.81"
+          username: "root"
+          key: "UZ65PrfzhHXfhaHZ"
+          port: 22
+          script: |
+            ls -al
