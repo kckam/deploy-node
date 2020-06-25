@@ -11,8 +11,8 @@ jobs:
       - name: Deploy package to digitalocean
         uses: appleboy/ssh-action@master
         with:
-          host: "165.22.106.81"
-          username: "root"
-          password: "UZ65PrfzhHXfhaHZ"
+          host: 165.22.106.81
+          username: root
+          password: UZ65PrfzhHXfhaHZ
           port: 22
           script: whoami
